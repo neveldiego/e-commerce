@@ -5,61 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
-    <header>
-        <ul class="nav">
-            <li>Home</li>
-            <li>Nosotros</li>
-            <li>Contacto</li>
+    <nav>
+        <ul class="menu-horizontal">
+            <li><a href="#">Inicio</a></li>
+            <li>
+                <a href="#">Carta</a>
+                <ul class="menu-vertical">
+                    <li><a href="#">Carne</a></li>
+                    <li><a href="#">Veggie</a></li>
+                    <li><a href="#">Papas</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Bebidas</a>
+                <ul class="menu-vertical">
+                    <li><a href="#">Sin alcohol</a></li>
+                    <li><a href="#">Con alcohol</a></li>
+                </ul>
+            <li><a href="#">Contacto</a></li>
         </ul>
-    </header>
+        
+    </nav>
     <main>
-        <div class="hero-banner">Hero banner</div>
+        <!-- ofertas -->
+        <div class="hero-banner"></div>
+        <h2>Lista de artículos diponibles</h2>
         <div class="container">
-            <h2>Lista de artículos diponibles</h2>
             <article>
-                <img src="https://http2.mlstatic.com/D_Q_NP_641295-MLA69573719686_052023-AB.webp" alt="imagen-articulo">
-                <div class="body-article">
-                    <p>Description</p>
-                    <p>Precio</p>
-                    <button>Ver producto</button>
+               <div class="body-article">
+                    <img src="Resources/b2.png" alt="imagen-articulo">
+                    <p>SimpleBurguer</p>
+                    <p>$ 12</p>
                 </div>
             </article>
             <article>
-                <img src="https://http2.mlstatic.com/D_Q_NP_641295-MLA69573719686_052023-AB.webp" alt="imagen-articulo">
                 <div class="body-article">
-                    <p>Description</p>
-                    <p>Precio</p>
-                    <button>Ver producto</button>
-                </div>
-            </article>
-            <article>
-                <img src="https://http2.mlstatic.com/D_Q_NP_641295-MLA69573719686_052023-AB.webp" alt="imagen-articulo">
+                     <img src="Resources/b1.png" alt="imagen-articulo">
+                     <p>CheeseBurguer</p>
+                     <p>$ 10</p>
+                 </div>
+             </article>
+             <article>
                 <div class="body-article">
-                    <p>Description</p>
-                    <p>Precio</p>
-                    <button>Ver producto</button>
-                </div>
-            </article>
-            <article>
-                <img src="https://http2.mlstatic.com/D_Q_NP_641295-MLA69573719686_052023-AB.webp" alt="imagen-articulo">
+                     <img src="Resources/b3.png" alt="imagen-articulo">
+                     <p>McBurguer</p>
+                     <p>$ 15</p>
+                 </div>
+             </article>
+             <article>
                 <div class="body-article">
-                    <p>Description</p>
-                    <p>Precio</p>
-                    <button>Ver producto</button>
-                </div>
-            </article>
+                     <img src="Resources/b4.jpeg" alt="imagen-articulo">
+                     <p>VeggieBurguer</p>
+                     <p>$ 12</p>
+                 </div>
+             </article>
+        
         </div>
     </main>
     <footer>
-        <div>Todos los derechos reservados</div>
+        <!-- colocar logo de empresa -->
+        <img src="" alt="" class="logo"> 
+        <div class="social-icon-container">
+            <a href="#" class="social-icon"></a>
+            <a href="#" class="social-icon"></a>
+            <a href="#" class="social-icon"></a>
+            <a href="#" class="social-icon"></a>
+        </div>
+        <div><b>Horario:</b> 20:00 a 23:30</div>
         <div>
             <ul class="nav">
-                <li>Home</li>
-                <li>Nosotros</li>
-                <li>Contacto</li>
+                <li class="menu-item">Home</li>
+                <li class="menu-item">Nosotros</li>
+                <li class="menu-item">Contacto</li>
             </ul>
         </div>
     </footer>

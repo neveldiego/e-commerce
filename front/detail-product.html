@@ -8,26 +8,51 @@
     <title>Detail product</title>
 </head>
 <body>
-    <header>
-        <ul class="nav">
-            <li>Home</li>
-            <li>Nosotros</li>
-            <li>Contacto</li>
+    <nav>
+        <ul class="menu-horizontal">
+            <li><a href="#">Inicio</a></li>
+            <li>
+                <a href="#">Carta</a>
+                <ul class="menu-vertical">
+                    <li><a href="#">Carne</a></li>
+                    <li><a href="#">Veggie</a></li>
+                    <li><a href="#">Papas</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Bebidas</a>
+                <ul class="menu-vertical">
+                    <li><a href="#">Sin alcohol</a></li>
+                    <li><a href="#">Con alcohol</a></li>
+                </ul>
+            <li><a href="#">Contacto</a></li>
         </ul>
-    </header>
+    </nav>
     <main>
-        <div class="hero-banner">Hero banner</div>
-        <div class="container">
-            <h2>Lista de artículos diponibles</h2>
+        <article>
+            <div class="body-article">
+                 <img src="Resources/b2.png" alt="imagen-articulo">
+                 <p>SimpleBurguer</p>
+                 <p>$ 12</p>
+             </div>
+         </article>
             
     </main>
     <footer>
-        <div>Todos los derechos reservados</div>
+        <!-- colocar logo de empresa -->
+        <img src="" alt="" class="logo"> 
+        <div class="social-icon-container">
+            <a href="#" class="social-icon"></a>
+            <a href="#" class="social-icon"></a>
+            <a href="#" class="social-icon"></a>
+            <a href="#" class="social-icon"></a>
+        </div>
+        <div><b>Horario:</b> 20:00 a 23:30</div>
         <div>
             <ul class="nav">
-                <li>Home</li>
-                <li>Nosotros</li>
-                <li>Contacto</li>
+                <li class="menu-item">Home</li>
+                <li class="menu-item">Nosotros</li>
+                <li class="menu-item">Contacto</li>
             </ul>
         </div>
     </footer>

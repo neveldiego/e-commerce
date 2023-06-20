@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    transition: 0.5s;
 }
 
 :root{
@@ -14,17 +15,85 @@
     --color-fonts:#000000;
 }
 
-body {
+/* body {
     background-color: var(--primary);
+    position: relative;
+} */
+
+body {
+    background-image: url(Resources/burguer.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+nav {
+    max-width: 900px;
+    margin: auto;
+    background-color: var(--secondary);
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.menu-horizontal li a{
+    display: block;
+    padding: 10px 20px;
+    color: #F4F4F4;
+    text-decoration: none;
+    
+}
+
+.menu-horizontal li:hover {
+    opacity: 0.7;
+
+}
+
+.menu-horizontal ul li:hover{
+    
+    background-color: white;
+    transition: 0.7s;
+}
+
+.menu-vertical {
+   position: absolute;
+   display: none;
+   list-style: none;
+   width: 200px;
+   background-color: rgba(0, 0, 0, .5); 
+}
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+
+.menu-vertical li:hover {
+    background-color: #F4F4F4;
+    transition: 0.6s;
+}
+
+.menu-vertical li a {
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
 }
 
 article {
     width: 140px;
     background-color: var(--primary);
     border-radius: 5px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     border: solid black;
+    align-items: center;
+    margin: 0 auto;
 }
+
 
 article img {
     width: 100%;
@@ -34,7 +103,10 @@ article .body-article {
     padding: 4px;
     background-color: var(--primary);
     text-align: center;
+}
 
+article .body-article:hover {
+    opacity: 0.5;
 }
 
 article .body-article p {
@@ -43,11 +115,7 @@ article .body-article p {
     
 }
 
-header {
-    height: 120px;
-    background-color: var(--secondary);
-    color: var(--primary);
-}
+
 
 main {
     padding: 12px;
@@ -55,16 +123,67 @@ main {
 }
 
 footer {
-    min-height: 60px;
-    background-color: var(--secondary);
+    
+    background-color: rgba(0, 0, 0, .5); ;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-footer .nav li {
-    line-height: 40px;
-    margin: 8px;
+.logo {
+    height: 80px;
+    margin-bottom: 1rem;
+
+}
+
+.social-icon-container, .nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.social-icon {
+    height: 50px;
+    width: 50px;
+    background-image: url(Resources/FacebookBlanco.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.social-icon:nth-of-type(2){
+    background-image: url(Resources/InstagramBlanco.png);
+}
+
+.social-icon:nth-of-type(3){
+    background-image: url(Resources/LinkedinBlanco.png);
+}
+.social-icon:nth-of-type(4){
+    background-image: url(Resources/TwitterBlanco.png);
+}
+
+h2 {
+    text-align: center;
+    color: #F4F4F4;
+}
+
+.nav {
+    list-style-type: none;
+    color: #F4F4F4;
+    font-size: 18px;
+}
+
+.menu-item {
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.menu-item:hover{
+    opacity: 10;
+
 }
 
 .container {
@@ -79,20 +198,18 @@ footer .nav li {
 
 .hero-banner {
     height: 140px;
-    background-color: var(--color-fonts);
+    background-image: url(Resources/oferta.jpg);
     border-radius: 10px;
     margin-top: 12px;
     margin-bottom: 12px;
 }
 
-.nav {
-    display: flex;
-    height: 100%;
-    justify-content: space-around;
+#producto {
+    
+    
+    
 }
 
-.nav li {
-    list-style: none;
-    line-height: 120px;
+@media (max-width: 992px) {
+    .menu-horizontal {display: none;}
 }
-
