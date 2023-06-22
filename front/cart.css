@@ -134,8 +134,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    /* Estilos para pantallas de hasta 768px de ancho */
-    /* Aquí puedes escribir los estilos específicos para pantallas más pequeñas */
+
     .header {
         /* Modifica el tamaño y los márgenes del encabezado */
         height: 60px;
